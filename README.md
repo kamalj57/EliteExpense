@@ -1,5 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ELITE EXPENSE
+Here's what happening with your money, Lets Manage your expense!!
 
+## Technologies Used
+- [**Next.js**](https://nextjs.org/): A React framework for server-rendered applications.
+- [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development and [shadcn/ui](https://ui.shadcn.com/) and [HyperUI](https://www.hyperui.dev/) free UI components.
+- [**Drizzle ORM**](https://orm.drizzle.team/): Lightweight, serverless-ready Object-Relational Mapping (ORM) tool designed for TypeScript applications with feature rich SQL dialects.
+- [**Neon Serverless Postgres**](https://neon.tech/): A serverless PostgreSQL database for scalable data storage.
+- [**Clerk**](https://clerk.com/): A user authentication service for managing users and sessions.
+
+ ## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Prerequisites
+
+Before you begin, ensure you have the following prerequisites:
+
+- Node.js and npm installed.
+- Neon Postgres account for database storage.
+- Clerk account for authentication.
+
+## Installation
+
+1. Clone the repository:
+   
+* git clone https://github.com/kamalj57/EliteExpense.git
+* cd 
 ## Getting Started
 
 First, run the development server:
