@@ -22,8 +22,8 @@ const EditBudget = ({budgetInfo,refreshData}) => {
     const [emojiIcon, setEmojiIcon] = useState(budgetInfo?.icon);
     const [openEmojiPicker, setOpenEmojiPicker] = useState(false);
 
-    const[name,setName]=useState(budgetInfo?.name);
-    const[amount,setAmount]=useState(budgetInfo?.amount);
+    const[name,setName]=useState();
+    const[amount,setAmount]=useState();
 
     const {user} =useUser();
 
@@ -38,9 +38,10 @@ const EditBudget = ({budgetInfo,refreshData}) => {
     const onUpdateBudget=async()=>{
         const result=await db.update(Budgets).set({
             name:name,
-            amaount:amount,
+            amount:amount,
             icon:emojiIcon
-        }).where(eq(Budgets.id,budgetInfo.id)).returning();
+        }).where(eq(Budgets.id,budgetInfo.id))
+        .returning();
         if(result){
             refreshData();
             toast("Budget Updated")
