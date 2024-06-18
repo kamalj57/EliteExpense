@@ -40,11 +40,11 @@ const DashboardHeader = () => {
   return (
     <div className="p-5 shadow-sm border-b flex justify-between">
       <div>
-        <Sheet>
-          <SheetTrigger>
+        <Sheet key={"left"}>
+          <SheetTrigger asChild>
             <MenuIcon />
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent side={"left"}>
             <SheetHeader>
               <Image src={"/logo.svg"} alt="logo" width={150} height={100} />
               <SheetDescription className="mt-5">
