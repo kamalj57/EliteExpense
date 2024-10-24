@@ -8,7 +8,7 @@ const Budgets = () => {
   return (
     <div className='p-10'>
      <div className="flex gap-3 items-center font-bold text-3xl">
-        <ArrowLeft onClick={()=>route.back()} className="cursor-pointer"/> My Expenses
+        <ArrowLeft onClick={()=>route.back()} className="cursor-pointer"/> My Budgets
         </div>
       <BudgetList/>
     </div>
